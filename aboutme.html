@@ -98,9 +98,12 @@ setTimeout("window.status = newMake()", i*300);
 
 <input id="go" type="button" value="Open new window" onclick="window.open('/https://aramos63.github.io/Portfolio/aboutme.html/','popUpWindow','height=500, width=400, left=100, top=100, resizable=yes, scrollbars=yes, toolbar=yes, menubar=no, location=no, directories=no, status=yes');">
 
-// Welcome to the Interactive JavaScript Tutorial.
-// Start by choosing a chapter and
-// write your code in this window.
+import javax.swing.JOptionPane;
 
-console.log("Welcome to my webpage again!");
+public class ClassNameHere
+{
 
+    public static void infoBox(String infoMessage, String titleBar)
+    {
+        JOptionPane.showMessageDialog(null, infoMessage, "InfoBox: " + titleBar, JOptionPane.INFORMATION_MESSAGE);
+    }
